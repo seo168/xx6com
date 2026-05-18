@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en-IN">
 <head>
 <meta charset="utf-8"/>
@@ -29,6 +30,8 @@
 <meta name="twitter:title" content="XX6 Partner Platforms India"/>
 <meta name="twitter:description" content="XX6COM download, XX6 APK download, partner platforms, and Android gaming apps for India."/>
 <meta name="twitter:image" content="https://xx6-india.com/assets/hero.webp"/>
+
+<!-- Favicons -->
 
 <meta name="theme-color" content="#b31c18"/>
 
@@ -62,7 +65,7 @@
       "alternateName":["XX6COM","XX6 Game APK 2025","XX6Game"],
       "applicationCategory":"GameApplication",
       "operatingSystem":"Android",
-      "downloadUrl":"https://d30vlgvvl0fj64.cloudfront.net/apk/XX6.8dobr.apk",
+      "downloadUrl":"https://d1811ku0vicgoo.cloudfront.net/apk/XX6.7amav.apk",
       "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
     },
     {
@@ -70,6 +73,26 @@
       "itemListElement":[
         {"@type":"ListItem","position":1,"name":"Home","item":"https://xx6-india.com/"},
         {"@type":"ListItem","position":2,"name":"Alliance","item":"https://xx6-india.com/alliance/"}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"What is XX6 partner platforms page?",
+          "acceptedAnswer":{"@type":"Answer","text":"The XX6 partner platforms page helps Indian users explore XX6COM and related Android APK gaming platforms with official channels and direct APK download links."}
+        },
+        {
+          "@type":"Question",
+          "name":"How can I download XX6 APK?",
+          "acceptedAnswer":{"@type":"Answer","text":"Users can click the XX6COM Download APK button to download the latest XX6 game APK 2025 for Android devices."}
+        },
+        {
+          "@type":"Question",
+          "name":"Does XX6COM support India users?",
+          "acceptedAnswer":{"@type":"Answer","text":"XX6COM is optimized for Indian mobile users with Android APK access, UPI-related content, INR-focused information, and partner platform updates."}
+        }
       ]
     }
   ]
@@ -111,7 +134,9 @@ a{text-decoration:none;color:inherit}
   padding:20px 24px;
 }
 
-header{padding-top:4px}
+header{
+  padding-top:4px;
+}
 
 .brand{
   display:flex;
@@ -215,11 +240,23 @@ header{padding-top:4px}
   animation:shine 2.5s infinite;
 }
 
-.main-btn:hover{transform:translateY(-3px) scale(1.03)}
+.main-btn:hover{
+  transform:translateY(-3px) scale(1.03);
+}
 
 @keyframes glow{
-  0%,100%{box-shadow:0 0 16px rgba(244,193,93,.52),0 0 36px rgba(255,122,24,.24),0 14px 30px rgba(0,0,0,.3)}
-  50%{box-shadow:0 0 26px rgba(244,193,93,.88),0 0 58px rgba(255,122,24,.42),0 16px 34px rgba(0,0,0,.34)}
+  0%,100%{
+    box-shadow:
+      0 0 16px rgba(244,193,93,.52),
+      0 0 36px rgba(255,122,24,.24),
+      0 14px 30px rgba(0,0,0,.3);
+  }
+  50%{
+    box-shadow:
+      0 0 26px rgba(244,193,93,.88),
+      0 0 58px rgba(255,122,24,.42),
+      0 16px 34px rgba(0,0,0,.34);
+  }
 }
 
 @keyframes move{
@@ -316,9 +353,20 @@ header{padding-top:4px}
   transition:all .28s ease;
 }
 
+.platform-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(244,193,93,.08),transparent 45%);
+  pointer-events:none;
+}
+
 .platform-card:hover{
   transform:translateY(-6px);
   border-color:rgba(244,193,93,.38);
+  box-shadow:
+    0 25px 55px rgba(0,0,0,.38),
+    0 0 40px rgba(244,193,93,.08);
 }
 
 .platform-top{
@@ -344,12 +392,18 @@ header{padding-top:4px}
   border:2px solid rgba(244,193,93,.45);
   background:#12090b;
   padding:3px;
-  box-shadow:0 0 0 3px rgba(244,193,93,.08),0 0 18px rgba(244,193,93,.28),0 0 35px rgba(255,140,0,.12),inset 0 1px 0 rgba(255,255,255,.08);
+  box-shadow:
+    0 0 0 3px rgba(244,193,93,.08),
+    0 0 18px rgba(244,193,93,.28),
+    0 0 35px rgba(255,140,0,.12),
+    inset 0 1px 0 rgba(255,255,255,.08);
   flex-shrink:0;
   transition:all .25s ease;
 }
 
-.platform-card:hover .platform-logo{transform:scale(1.06) rotate(2deg)}
+.platform-card:hover .platform-logo{
+  transform:scale(1.06) rotate(2deg);
+}
 
 .platform-name{
   font-size:28px;
@@ -436,6 +490,11 @@ header{padding-top:4px}
   color:#3a2200;
 }
 
+.channel-btn:hover,
+.platform-btn:hover{
+  transform:translateY(-2px);
+}
+
 .info-box{
   margin-top:44px;
   border-radius:24px;
@@ -471,44 +530,162 @@ footer{
 }
 
 @media (max-width:980px){
-  .platform-grid{grid-template-columns:repeat(2,1fr)}
+  .platform-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
 }
 
 @media (max-width:768px){
-  .container{padding:14px 16px}
-  header{padding-top:0}
-  header .container{padding-top:12px;padding-bottom:6px}
-  .brand{font-size:17px}
-  .logo{width:36px;height:36px}
-  .hero{padding-top:22px;padding-bottom:8px}
-  .hero h1{font-size:31px;letter-spacing:-.8px}
-  .hero p{font-size:14px;margin-top:10px;line-height:1.55}
-  .hero-actions{margin-top:16px}
-  .main-btn{max-width:100%;padding:14px 16px;font-size:14px;border-radius:18px}
-  .quick-note{margin-top:10px;font-size:12.5px;line-height:1.55}
-  .stats-grid{grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
-  .stat-card{padding:12px 8px;border-radius:15px}
-  .stat-card strong{font-size:18px}
-  .stat-card span{font-size:10.5px;line-height:1.3}
-  .section-title{margin-top:24px;margin-bottom:14px}
-  .section-title h2{font-size:24px}
-  .section-title p{font-size:13px;margin-top:6px}
-  .platform-grid{grid-template-columns:1fr;gap:16px}
-  .platform-card{padding:20px;border-radius:22px}
-  .platform-name{font-size:24px}
-  .platform-desc{min-height:auto;font-size:14px}
+  .container{
+    padding:14px 16px;
+  }
+
+  header{
+    padding-top:0;
+  }
+
+  header .container{
+    padding-top:12px;
+    padding-bottom:6px;
+  }
+
+  .brand{
+    font-size:17px;
+  }
+
+  .logo{
+    width:36px;
+    height:36px;
+  }
+
+  .hero{
+    padding-top:22px;
+    padding-bottom:8px;
+  }
+
+  .hero h1{
+    font-size:31px;
+    letter-spacing:-.8px;
+  }
+
+  .hero p{
+    font-size:14px;
+    margin-top:10px;
+    line-height:1.55;
+  }
+
+  .hero-actions{
+    margin-top:16px;
+  }
+
+  .main-btn{
+    max-width:100%;
+    padding:14px 16px;
+    font-size:14px;
+    border-radius:18px;
+  }
+
+  .quick-note{
+    margin-top:10px;
+    font-size:12.5px;
+    line-height:1.55;
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+    margin-top:18px;
+  }
+
+  .stat-card{
+    padding:12px 8px;
+    border-radius:15px;
+  }
+
+  .stat-card strong{
+    font-size:18px;
+  }
+
+  .stat-card span{
+    font-size:10.5px;
+    line-height:1.3;
+  }
+
+  .section-title{
+    margin-top:24px;
+    margin-bottom:14px;
+  }
+
+  .section-title h2{
+    font-size:24px;
+  }
+
+  .section-title p{
+    font-size:13px;
+    margin-top:6px;
+  }
+
+  .platform-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .platform-card{
+    padding:20px;
+    border-radius:22px;
+  }
+
+  .platform-name{
+    font-size:24px;
+  }
+
+  .platform-desc{
+    min-height:auto;
+    font-size:14px;
+  }
 }
 
 @media (max-width:480px){
-  .hero h1{font-size:29px}
-  .platform-top{align-items:flex-start;gap:10px}
-  .platform-logo{width:50px;height:50px}
-  .platform-name{font-size:21px}
-  .platform-badge{font-size:10px;padding:7px 9px}
-  .platform-actions{grid-template-columns:1fr 1fr;gap:8px}
-  .channel-btn,.platform-btn{font-size:12.5px;padding:13px 8px}
+  .hero h1{
+    font-size:29px;
+  }
+
+  .platform-top{
+    align-items:flex-start;
+    gap:10px;
+  }
+
+  .platform-logo{
+    width:50px;
+    height:50px;
+  }
+
+  .platform-name{
+    font-size:21px;
+  }
+
+  .platform-badge{
+    font-size:10px;
+    padding:7px 9px;
+  }
+
+  .platform-actions{
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+
+  .channel-btn,
+  .platform-btn{
+    font-size:12.5px;
+    padding:13px 8px;
+  }
 }
 </style>
+
 </head>
 
 <body>
@@ -530,19 +707,20 @@ footer{
       Gaming Platforms
     </h1>
 
-    <p>
-      Discover XX6COM and selected mobile-friendly partner gaming platforms in one place. Choose your favorite Android app, download safely, follow official channels, enjoy smooth gameplay, daily promotions, and a better mobile gaming experience in India.
-    </p>
+<p>
+  Discover XX6COM and selected mobile-friendly partner gaming platforms in one place. Choose your favorite Android app, download safely, follow official channels, enjoy smooth gameplay, daily promotions, and a better mobile gaming experience in India.
+</p>
 
-    <div class="hero-actions">
-      <a class="main-btn" href="https://t.me/XX6com" target="_blank" rel="noopener noreferrer">
-        🎮 Join XX6 Official Gaming Updates Channel
-      </a>
-    </div>
+<div class="hero-actions">
+  <a class="main-btn" href="https://t.me/india66agentclub" target="_blank" rel="noopener noreferrer">
+    🎮 Join XX6 Official Gaming Updates Channel
+  </a>
+</div>
 
-    <div class="quick-note">
-      🔥 Get the latest XX6COM download updates, XX6 APK download links, XX6 game APK 2025 news, bonus information, partner platform updates, and helpful Android gaming tips.
-    </div>
+<div class="quick-note">
+  🔥 Get the latest XX6COM download updates, XX6 APK download links, XX6 game APK 2025 news, bonus information, partner platform updates, and helpful Android gaming tips.
+</div>
+
   </section>
 
   <section class="stats-grid">
@@ -551,15 +729,16 @@ footer{
       <span>XX6 Partner Platforms</span>
     </div>
 
-    <div class="stat-card">
-      <strong>APK</strong>
-      <span>Direct Android Download Links</span>
-    </div>
+<div class="stat-card">
+  <strong>APK</strong>
+  <span>Direct Android Download Links</span>
+</div>
 
-    <div class="stat-card">
-      <strong>Mobile</strong>
-      <span>Smooth Gaming Experience</span>
-    </div>
+<div class="stat-card">
+  <strong>Mobile</strong>
+  <span>Smooth Gaming Experience</span>
+</div>
+
   </section>
 
   <section class="section-title">
@@ -569,179 +748,179 @@ footer{
 
   <section class="platform-grid">
 
-    <div class="platform-card">
-      <div class="platform-top">
-        <div class="platform-title">
-          <img class="platform-logo" src="/assets/xx6-logo.webp?v=3" alt="XX6COM APK download India logo">
-          <div class="platform-name">XX6.COM</div>
-        </div>
-        <div class="platform-badge">MAIN</div>
-      </div>
-
-      <div class="platform-desc">
-        XX6.COM is the main XX6 partner platform for Indian Android users searching for xx6com download, xx6 apk download, and XX6 game APK 2025.
-      </div>
-
-      <div class="feature-list">
-        <span>Version <b>2025 Latest</b></span>
-        <span>Size <b>~20 MB</b></span>
-        <span>Welcome Bonus <b>₹500</b></span>
-      </div>
-
-      <div class="platform-actions">
-        <a class="channel-btn" href="https://t.me/XX6com" target="_blank" rel="noopener noreferrer">
-          Official Channel
-        </a>
-        <a class="platform-btn" href="https://d30vlgvvl0fj64.cloudfront.net/apk/XX6.8dobr.apk" rel="nofollow noopener noreferrer">
-          Download APK
-        </a>
-      </div>
+<div class="platform-card">
+  <div class="platform-top">
+    <div class="platform-title">
+      <img class="platform-logo" src="/assets/xx6-logo.webp?v=3" alt="XX6COM APK download India logo">
+      <div class="platform-name">XX6.COM</div>
     </div>
+    <div class="platform-badge">MAIN</div>
+  </div>
 
-    <div class="platform-card">
-      <div class="platform-top">
-        <div class="platform-title">
-          <img class="platform-logo" src="/assets/yygame-logo.webp?v=3" alt="YYGAME partner platform logo">
-          <div class="platform-name">YYGAME</div>
-        </div>
-        <div class="platform-badge">FAST GROWTH</div>
-      </div>
+  <div class="platform-desc">
+    XX6.COM is the main XX6 partner platform for Indian Android users searching for xx6com download, xx6 apk download, and XX6 game APK 2025.
+  </div>
 
-      <div class="platform-desc">
-        YYGAME is a mobile-friendly partner platform for players who want smooth app performance, active promotions, and easy Android access.
-      </div>
+  <div class="feature-list">
+    <span>Version <b>2025 Latest</b></span>
+    <span>Size <b>~20 MB</b></span>
+    <span>Welcome Bonus <b>₹500</b></span>
+  </div>
 
-      <div class="feature-list">
-        <span>Version <b>1.0.7</b></span>
-        <span>Size <b>~20 MB</b></span>
-        <span>Welcome Bonus <b>₹500</b></span>
-      </div>
+  <div class="platform-actions">
+    <a class="channel-btn" href="https://t.me/XX6COM01" target="_blank" rel="noopener noreferrer">
+      Official Channel
+    </a>
+    <a class="platform-btn" href="https://d1811ku0vicgoo.cloudfront.net/apk/XX6.7amav.apk" rel="nofollow noopener noreferrer">
+      Download APK
+    </a>
+  </div>
+</div>
 
-      <div class="platform-actions">
-        <a class="channel-btn" href="https://t.me/YYGAME_OFFICIAL" target="_blank" rel="noopener noreferrer">
-          Official Channel
-        </a>
-        <a class="platform-btn" href="https://dclaa7imbttae.cloudfront.net/apk/yy.tpnja.apk" rel="nofollow noopener noreferrer">
-          Download APK
-        </a>
-      </div>
+<div class="platform-card">
+  <div class="platform-top">
+    <div class="platform-title">
+      <img class="platform-logo" src="/assets/yygame-logo.webp?v=3" alt="YYGAME partner platform logo">
+      <div class="platform-name">YYGAME</div>
     </div>
+    <div class="platform-badge">FAST GROWTH</div>
+  </div>
 
-    <div class="platform-card">
-      <div class="platform-top">
-        <div class="platform-title">
-          <img class="platform-logo" src="/assets/yy9-logo.webp?v=3" alt="YY9 partner platform logo">
-          <div class="platform-name">YY9.COM</div>
-        </div>
-        <div class="platform-badge">NEW</div>
-      </div>
+  <div class="platform-desc">
+    YYGAME is a mobile-friendly partner platform for players who want smooth app performance, active promotions, and easy Android access.
+  </div>
 
-      <div class="platform-desc">
-        YY9.COM is designed for mobile players who enjoy fresh promotions, easy app access, and a better Android gaming experience.
-      </div>
+  <div class="feature-list">
+    <span>Version <b>1.0.7</b></span>
+    <span>Size <b>~20 MB</b></span>
+    <span>Welcome Bonus <b>₹500</b></span>
+  </div>
 
-      <div class="feature-list">
-        <span>Version <b>1.0.7</b></span>
-        <span>Size <b>~20 MB</b></span>
-        <span>Welcome Bonus <b>₹500</b></span>
-      </div>
+  <div class="platform-actions">
+    <a class="channel-btn" href="https://t.me/YYGAME_OFFICIAL" target="_blank" rel="noopener noreferrer">
+      Official Channel
+    </a>
+    <a class="platform-btn" href="https://dclaa7imbttae.cloudfront.net/apk/yy.tpnja.apk" rel="nofollow noopener noreferrer">
+      Download APK
+    </a>
+  </div>
+</div>
 
-      <div class="platform-actions">
-        <a class="channel-btn" href="https://t.me/YY9COM0" target="_blank" rel="noopener noreferrer">
-          Official Channel
-        </a>
-        <a class="platform-btn" href="https://d2rfqhp7azz49k.cloudfront.net/apk/YY9.7onms.apk" rel="nofollow noopener noreferrer">
-          Download APK
-        </a>
-      </div>
+<div class="platform-card">
+  <div class="platform-top">
+    <div class="platform-title">
+      <img class="platform-logo" src="/assets/yy9-logo.webp?v=3" alt="YY9 partner platform logo">
+      <div class="platform-name">YY9.COM</div>
     </div>
+    <div class="platform-badge">NEW</div>
+  </div>
 
-    <div class="platform-card">
-      <div class="platform-top">
-        <div class="platform-title">
-          <img class="platform-logo" src="/assets/xx5-logo.webp?v=3" alt="XX5 partner platform logo">
-          <div class="platform-name">XX5.COM</div>
-        </div>
-        <div class="platform-badge">TRENDING</div>
-      </div>
+  <div class="platform-desc">
+    YY9.COM is designed for mobile players who enjoy fresh promotions, easy app access, and a better Android gaming experience.
+  </div>
 
-      <div class="platform-desc">
-        XX5.COM provides a stable gaming experience with smooth gameplay flow, mobile convenience, and fast access for Android users.
-      </div>
+  <div class="feature-list">
+    <span>Version <b>1.0.7</b></span>
+    <span>Size <b>~20 MB</b></span>
+    <span>Welcome Bonus <b>₹500</b></span>
+  </div>
 
-      <div class="feature-list">
-        <span>Version <b>1.0.7</b></span>
-        <span>Size <b>~20 MB</b></span>
-        <span>Welcome Bonus <b>₹500</b></span>
-      </div>
+  <div class="platform-actions">
+    <a class="channel-btn" href="https://t.me/YY9COM0" target="_blank" rel="noopener noreferrer">
+      Official Channel
+    </a>
+    <a class="platform-btn" href="https://d2rfqhp7azz49k.cloudfront.net/apk/YY9.7onms.apk" rel="nofollow noopener noreferrer">
+      Download APK
+    </a>
+  </div>
+</div>
 
-      <div class="platform-actions">
-        <a class="channel-btn" href="https://t.me/XX5COM01" target="_blank" rel="noopener noreferrer">
-          Official Channel
-        </a>
-        <a class="platform-btn" href="https://d1811ku0vicgoo.cloudfront.net/apk/XX5.7amav.apk" rel="nofollow noopener noreferrer">
-          Download APK
-        </a>
-      </div>
+<div class="platform-card">
+  <div class="platform-top">
+    <div class="platform-title">
+      <img class="platform-logo" src="/assets/xx6-logo.webp?v=3" alt="XX6 partner platform logo">
+      <div class="platform-name">XX6.COM</div>
     </div>
+    <div class="platform-badge">TRENDING</div>
+  </div>
 
-    <div class="platform-card">
-      <div class="platform-top">
-        <div class="platform-title">
-          <img class="platform-logo" src="/assets/xx7-logo.webp?v=3" alt="XX7 partner platform logo">
-          <div class="platform-name">XX7.COM</div>
-        </div>
-        <div class="platform-badge">TOP #3 INDIA</div>
-      </div>
+  <div class="platform-desc">
+    XX6.COM provides a stable gaming experience with smooth gameplay flow, mobile convenience, and fast access for Android users.
+  </div>
 
-      <div class="platform-desc">
-        XX7.COM is a popular partner platform option for players looking for stable access, smooth performance, and simple app download.
-      </div>
+  <div class="feature-list">
+    <span>Version <b>1.0.7</b></span>
+    <span>Size <b>~20 MB</b></span>
+    <span>Welcome Bonus <b>₹500</b></span>
+  </div>
 
-      <div class="feature-list">
-        <span>Version <b>1.0.7</b></span>
-        <span>Size <b>~20 MB</b></span>
-        <span>Welcome Bonus <b>₹500</b></span>
-      </div>
+  <div class="platform-actions">
+    <a class="channel-btn" href="https://t.me/XX6com" target="_blank" rel="noopener noreferrer">
+      Official Channel
+    </a>
+    <a class="platform-btn" href="https://d30vlgvvl0fj64.cloudfront.net/apk/XX6.8dobr.apk" rel="nofollow noopener noreferrer">
+      Download APK
+    </a>
+  </div>
+</div>
 
-      <div class="platform-actions">
-        <a class="channel-btn" href="https://t.me/xx7com" target="_blank" rel="noopener noreferrer">
-          Official Channel
-        </a>
-        <a class="platform-btn" href="https://d2jhwu6bwze8ki.cloudfront.net/apk/XX7.8xrlq.apk" rel="nofollow noopener noreferrer">
-          Download APK
-        </a>
-      </div>
+<div class="platform-card">
+  <div class="platform-top">
+    <div class="platform-title">
+      <img class="platform-logo" src="/assets/xx7-logo.webp?v=3" alt="XX7 partner platform logo">
+      <div class="platform-name">XX7.COM</div>
     </div>
+    <div class="platform-badge">TOP #3 INDIA</div>
+  </div>
 
-    <div class="platform-card">
-      <div class="platform-top">
-        <div class="platform-title">
-          <img class="platform-logo" src="/assets/66game-logo.webp?v=3" alt="66GAME partner platform logo">
-          <div class="platform-name">66GAME</div>
-        </div>
-        <div class="platform-badge">TOP #5 INDIA</div>
-      </div>
+  <div class="platform-desc">
+    XX7.COM is a popular partner platform option for players looking for stable access, smooth performance, and simple app download.
+  </div>
 
-      <div class="platform-desc">
-        66GAME is a partner platform made for players who want quick Android access, smooth gameplay, and regular platform updates.
-      </div>
+  <div class="feature-list">
+    <span>Version <b>1.0.7</b></span>
+    <span>Size <b>~20 MB</b></span>
+    <span>Welcome Bonus <b>₹500</b></span>
+  </div>
 
-      <div class="feature-list">
-        <span>Version <b>1.0.7</b></span>
-        <span>Size <b>~20 MB</b></span>
-        <span>Welcome Bonus <b>₹500</b></span>
-      </div>
+  <div class="platform-actions">
+    <a class="channel-btn" href="https://t.me/xx7com" target="_blank" rel="noopener noreferrer">
+      Official Channel
+    </a>
+    <a class="platform-btn" href="https://d2jhwu6bwze8ki.cloudfront.net/apk/XX7.8xrlq.apk" rel="nofollow noopener noreferrer">
+      Download APK
+    </a>
+  </div>
+</div>
 
-      <div class="platform-actions">
-        <a class="channel-btn" href="https://t.me/IN_66Game" target="_blank" rel="noopener noreferrer">
-          Official Channel
-        </a>
-        <a class="platform-btn" href="https://dvnm6cw04vasl.cloudfront.net/apk/66game.1qbxp.apk" rel="nofollow noopener noreferrer">
-          Download APK
-        </a>
-      </div>
+<div class="platform-card">
+  <div class="platform-top">
+    <div class="platform-title">
+      <img class="platform-logo" src="/assets/66game-logo.webp?v=3" alt="66GAME partner platform logo">
+      <div class="platform-name">66GAME</div>
     </div>
+    <div class="platform-badge">TOP #5 INDIA</div>
+  </div>
+
+  <div class="platform-desc">
+    66GAME is a partner platform made for players who want quick Android access, smooth gameplay, and regular platform updates.
+  </div>
+
+  <div class="feature-list">
+    <span>Version <b>1.0.7</b></span>
+    <span>Size <b>~20 MB</b></span>
+    <span>Welcome Bonus <b>₹500</b></span>
+  </div>
+
+  <div class="platform-actions">
+    <a class="channel-btn" href="https://t.me/IN_66Game" target="_blank" rel="noopener noreferrer">
+      Official Channel
+    </a>
+    <a class="platform-btn" href="https://dvnm6cw04vasl.cloudfront.net/apk/66game.1qbxp.apk" rel="nofollow noopener noreferrer">
+      Download APK
+    </a>
+  </div>
+</div>
 
   </section>
 
